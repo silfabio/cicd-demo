@@ -30,8 +30,7 @@ const (
 <body>
 <div class="container">
 <div class="row">
-<div class="col s2">&nbsp;</div>
-<div class="col s8">
+<div>
 
 
 <div class="card {{.Color}}">
