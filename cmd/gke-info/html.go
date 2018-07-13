@@ -34,6 +34,9 @@ const (
 	// Listen to messages from parent window
 	bindEvent(window, 'message', function (e) {
 			console.log(e.data);
+			if (e.data=="refresh") {
+				window.location.reload();	
+			}
 	});
 </script>
 
