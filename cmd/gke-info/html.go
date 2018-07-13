@@ -22,11 +22,12 @@ const (
 <head>
 
 <script>
-window.attachEvent("onmessage", receiveMessage);
+window.addEventListener('message', receiveMessage, false);
 
 function receiveMessage(e) {
+	console.log(e);
   if (e.data == "refresh") {
-    history.go(0);
+		history.go(0);
   }
 }
 </script>
