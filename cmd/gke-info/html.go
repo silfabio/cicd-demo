@@ -20,6 +20,17 @@ const (
 	html = `<!doctype html>
 <html>
 <head>
+
+<script>
+window.attachEvent("onmessage", receiveMessage);
+
+function receiveMessage(e) {
+  if (e.data == "refresh") {
+    history.go(0);
+  }
+}
+</script>
+
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 
