@@ -22,14 +22,19 @@ const (
 <head>
 
 <script>
-window.addEventListener('message', receiveMessage, false);
+	// addEventListener support for IE8
+	function bindEvent(element, eventName, eventHandler) {
+			if (element.addEventListener) {
+					element.addEventListener(eventName, eventHandler, false);
+			} else if (element.attachEvent) {
+					element.attachEvent('on' + eventName, eventHandler);
+			}
+	}
 
-function receiveMessage(e) {
-	console.log(e);
-  if (e.data == "refresh") {
-		history.go(0);
-  }
-}
+	// Listen to messages from parent window
+	bindEvent(window, 'message', function (e) {
+			console.log(e.data);
+	});
 </script>
 
 <!-- Compiled and minified CSS -->
