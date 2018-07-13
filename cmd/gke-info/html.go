@@ -35,7 +35,9 @@ const (
 	bindEvent(window, 'message', function (e) {
 			console.log(e.data);
 			if (e.data=="refresh") {
+				console.log("reloading iframe");
 				window.location.reload();	
+				console.log("reloaded");
 			}
 	});
 </script>
