@@ -59,59 +59,12 @@ const (
 <table class="bordered">
   <tbody>
 	<tr>
-	  <td>Pod Name</td>
-	  <td>{{.PodName}}</td>
-	</tr>
-	<tr>
-	  <td>Node Name</td>
-	  <td>{{.Name}}</td>
-	</tr>
-	<tr>
-	  <td>Version</td>
-	  <td>{{.Version}}</td>
-	</tr>
-	<tr>
-	  <td>Zone</td>
-	  <td>{{.Zone}}</td>
-	</tr>
-	<tr>
-	  <td>Project</td>
-	  <td>{{.Project}}</td>
-	</tr>
-	<tr>
-	  <td>Node Internal IP</td>
-	  <td>{{.InternalIP}}</td>
-	</tr>
-	<tr>
-	  <td>Node External IP</td>
-	  <td>{{.ExternalIP}}</td>
+	  <td><h2>Version</h2></td>
+	  <td><h2><b>{{.Version}}</b></h2></td>
 	</tr>
   </tbody>
 </table>
 </div>
-</div>
-
-<div class="card {{.Color}}">
-<div class="card-content white-text">
-<div class="card-title">Frontend that handled this request</div>
-</div>
-<div class="card-content white">
-<table class="bordered">
-  <tbody>
-	<tr>
-	  <td>Frontend IP:PORT</td>
-	  <td>{{.ClientIP}}</td>
-	</tr>
-	<tr>
-	  <td>Request to Backend</td>
-	  <td><pre>{{.LBRequest}}</pre></td>
-	</tr>
-<tr>
-  <td>Error</td>
-  <td>{{.Error}}</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 </div>
