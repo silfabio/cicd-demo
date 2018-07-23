@@ -53,14 +53,13 @@ const (
 
 <div class="card {{.Color}}">
 <div class="card-content white-text">
-<div class="card-title">Backend that serviced this request</div>
+<div class="card-title">Current App Version</div>
 </div>
 <div class="card-content white">
 <table class="bordered">
   <tbody>
 	<tr>
-	  <td><h3>Version</h3></td>
-	  <td><h3><b>{{.Version}}</b></h3></td>
+	  <td><center><h3><b>{{.Version}}</b></h3></center></td>
 	</tr>
   </tbody>
 </table>
