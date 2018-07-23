@@ -59,8 +59,8 @@ const (
 <table class="bordered">
   <tbody>
 	<tr>
-	  <td><h2>Version</h2></td>
-	  <td><h2><b>{{.Version}}</b></h2></td>
+	  <td><h3>Version</h3></td>
+	  <td><h3><b>{{.Version}}</b></h3></td>
 	</tr>
   </tbody>
 </table>
