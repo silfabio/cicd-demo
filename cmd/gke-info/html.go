@@ -20,7 +20,6 @@ const (
 	html = `<!doctype html>
 <html>
 <head>
-
 <script>
 	// addEventListener support for IE8
 	function bindEvent(element, eventName, eventHandler) {
@@ -30,7 +29,6 @@ const (
 					element.attachEvent('on' + eventName, eventHandler);
 			}
 	}
-
 	// Listen to messages from parent window
 	bindEvent(window, 'message', function (e) {
 			if (e.data=="refresh") {
@@ -38,10 +36,8 @@ const (
 			}
 	});
 </script>
-
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-
 <!-- Compiled and minified JavaScript -->
 <title>Frontend Web Server</title>
 </head>
@@ -49,9 +45,7 @@ const (
 <div class="container">
 <div class="row">
 <div>
-
-
-<div class="card {{.Color}}">
+<div class="card" style="background-color: {{.Color}} !important">
 <div class="card-content white-text">
 <div class="card-title">Current App Version</div>
 </div>
@@ -65,7 +59,6 @@ const (
 </table>
 </div>
 </div>
-
 </div>
 </div>
 </div>
