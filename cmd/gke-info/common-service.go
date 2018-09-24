@@ -38,7 +38,7 @@ func (cs commonService) MetaData(r *http.Request) *Instance {
 	instance.LBRequest = string(raw)
 	instance.ClientIP = r.RemoteAddr
 	instance.Version = version
-	instance.Color = "#F4B400"
+	instance.Color = "#0F9D58"
 	instance.PodName = os.Getenv("HOSTNAME")
 	return instance
 }
